@@ -1,0 +1,1 @@
+web: gunicorn burnout_app.wsgi
