@@ -1,0 +1,103 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  font: 1.5rem Verdana, Arial, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 2.5rem;
+  text-align: center;
+  color: yellow;
+}
+
+h4 {
+  font-weight: normal;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+main {
+  max-width: 100%;
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+input, select{
+  max-width: 85%;
+}
+
+footer,
+header {
+  background-color: blueviolet;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+footer p{
+  font-size: 1.1rem;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+label{
+  font: 1.2rem 'Georgia';
+}
+
+.form-group option {
+  text-transform: uppercase;
+  font-family: 'Trebuchet MS';
+  font-size: 16px;
+}
+
+#button{
+  cursor: pointer;
+  font-family: cursive;
+  border: 2px solid red;
+  background-color: lightgreen;
+  border-radius: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-top: 15px;
+}
+
+.button{
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .layout{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 850px;
+    margin: auto;
+  }
+  .app-form{margin-left: 2rem;}
+
+  .primary-header{
+    background: url(./hospitalEquipment.jpg) center / cover no-repeat;
+  }
+  .header-title, p{
+    margin-top: 20px;
+  }
+  #form-group :first-child{margin-top: 20px;}
+}
